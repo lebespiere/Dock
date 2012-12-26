@@ -1,0 +1,119 @@
+
+
+.dock-box {
+    text-align: center;
+
+}
+
+.dock {
+    height: 50px;
+    background: -moz-linear-gradient(top, #eee, #aaa);
+    background: -o-linear-gradient(top, #eee, #aaa);
+    background: -webkit-linear-gradient(top, #eee, #aaa);
+    box-shadow: 0 2px 0;
+    position: relative;
+    margin-top: 100px;
+    display: inline-block;
+}
+
+
+
+.dock:before, .dock:after {
+    content: "";
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    position: absolute;
+    box-shadow: 0 2px 0;
+    background: -moz-linear-gradient(top, #eee, #aaa);
+    background: -o-linear-gradient(top, #eee, #aaa);
+    background: -webkit-linear-gradient(top, #eee, #aaa);
+    background: linear-gradient(top, #eee, #aaa);
+}
+
+.dock:before {
+    left: -15px;
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+
+.dock:after {
+    right: -15px;
+    z-index: -1;
+    -webkit-transform: skewX(25deg);
+    transform: skewX(25deg);
+}
+
+.dock ul {
+    padding: 0;
+    margin: 0;
+}
+
+.dock ul li {
+    float: left;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    font-family: helvetica, sans-serif;
+}
+
+.dock ul li a {
+    text-decoration: none;
+}
+
+.dock ul li a img {
+    width: 60px;
+    display: inline;
+    margin-top: -30px;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.dock ul li a span {
+    position: absolute;
+    top:-90px;
+    opacity: 0;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    width: 80%;
+    margin-right: auto;
+    color: #fff;
+    padding: 4px 12px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.dock ul li:hover a span {
+    color: white;
+    background: rgba(107, 107, 107, 0.6);
+    text-shadow: 1px 1px 1px #000;
+    opacity: 1;
+    -webkit-transition: opacity .3s linear;
+    -moz-transition: opacity .3s linear;
+    -o-transition: opacity .3s linear;
+    transition: opacity .3s linear;
+}
+
+
+
+.dock ul li:hover a img {
+    width:90px;
+    margin-top: -60px;
+}
+
+.dock ul li:hover + li a img {
+    width:75px;
+    margin-top: -45px;
+}
+
+
+
+
+
+
+
+
+
+
+
