@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cd69c7d-78b5-43ec-9838-1e79d42ba8d0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/index.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/templates/index.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/public/css/dock.css" afterPath="$PROJECT_DIR$/src/main/webapp/public/css/dock.css" />
     </list>
     <ignored path="greeter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,10 +60,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.ftl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.ftl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/index.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="18" selection-start="681" selection-end="681" vertical-scroll-proportion="0.3018868">
+            <state line="39" column="18" selection-start="681" selection-end="681" vertical-scroll-proportion="-10.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dock.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/public/css/dock.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="108" column="1" selection-start="2323" selection-end="2323" vertical-scroll-proportion="0.96336997">
               <folding />
             </state>
           </provider>
@@ -92,6 +101,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/main/webapp/templates/index.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/css/dock.css" />
       </list>
     </option>
   </component>
@@ -577,7 +587,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/index.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="18" selection-start="681" selection-end="681" vertical-scroll-proportion="0.3018868">
+        <state line="39" column="18" selection-start="681" selection-end="681" vertical-scroll-proportion="-10.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/css/dock.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="1" selection-start="2323" selection-end="2323" vertical-scroll-proportion="0.96336997">
           <folding />
         </state>
       </provider>
