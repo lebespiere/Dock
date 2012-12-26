@@ -1,72 +1,38 @@
 [#ftl]
 
 [#assign main]
-<div class="dock-box">
+<div class="centered">
   <div class="dock">
-    <ul>
-      <li>
-        <a href="">
-          <span>Школа ИТ</span>
-          <img src="/public/img/dock/bsit.png">
-        </a>
-      </li>
-
-      <li>
-        <a href="">
-          <span>EduArea</span>
-          <img src="/public/img/dock/eduarea.png">
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <span>Savant.PRO </span>
-          <img src="/public/img/dock/savant.png">
-        </a>
-      </li>
-
-
-      <li>
-
-        <a href="">
-          <span>Scala</span>
-          <img src="/public/img/dock/scala.png">
-        </a>
-
-      </li>
-
-      <li>
-
-        <a href="">
-          <span>Chrome</span>
-          <img src="/public/img/dock/chrome.png">
-        </a>
-
-      </li>
-
-      <li>
-
-        <a href="">
-          <span>Firefox</span>
-          <img src="/public/img/dock/firefox.png">
-        </a>
-
-      </li>
-
-      <li>
-
-        <a href="">
-          <span>Opera</span>
-          <img src="/public/img/dock/opera.png">
-        </a>
-
-      </li>
-
-
-    </ul>
+    <a href="#">
+      <span>Школа ИТ</span>
+      <img src="/img/dock/bsit.png">
+    </a>
+    <a href="#">
+      <span>EduArea</span>
+      <img src="/img/dock/eduarea.png">
+    </a>
+    <a href="#">
+      <span>Savant.PRO </span>
+      <img src="/img/dock/savant.png">
+    </a>
+    <a href="#">
+      <span>Scala</span>
+      <img src="/img/dock/scala.png">
+    </a>
+    <a href="#">
+      <span>Chrome</span>
+      <img src="/img/dock/chrome.png">
+    </a>
+    <a href="#">
+      <span>Firefox</span>
+      <img src="/img/dock/firefox.png">
+    </a>
+    <a href="#">
+      <span>Opera</span>
+      <img src="/img/dock/opera.png">
+    </a>
   </div>
 </div>
-
-
 [/#assign]
 
-[#include "layout_dock.ftl"/]
+[#include "layout.ftl"/]

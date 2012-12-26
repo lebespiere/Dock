@@ -1,109 +1,100 @@
+body {
+  margin:0;
+  padding:0;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size:16px;
+  font-weight:300;
+}
+
+.centered {
+  text-align:center;
+}
+
 .dock {
-    height: 50px;
-    background: linear-gradient(top, #eee, #aaa);
-    background: -moz-linear-gradient(top, #eee, #aaa);
-    background: -o-linear-gradient(top, #eee, #aaa);
-    background: -webkit-linear-gradient(top, #eee, #aaa);
-    box-shadow: 0 2px 0;
-    position: relative;
-    margin-top: 100px;
-    margin-left: 50px;
-    display: inline-block;
-    font-family: helvetica, sans-serif;
+  margin-top:100px;
+}
+
+.dock, .dock::before, .dock::after {
+  position: relative;
+  content: "";
+  height: 50px;
+  display: inline-block;
+  box-shadow: 0 2px 0 rgba(0,0,0,1);
+  background: linear-gradient(top, #eee, #aaa);
+  background: -moz-linear-gradient(top, #eee, #aaa);
+  background: -o-linear-gradient(top, #eee, #aaa);
+  background: -webkit-linear-gradient(top, #eee, #aaa);
 }
 
 .dock:before, .dock:after {
-    content: "";
-    height: 50px;
-    width: 50px;
-    display: inline-block;
-    position: absolute;
-    box-shadow: 0 2px 0;
-    background: -moz-linear-gradient(top, #eee, #aaa);
-    background: -o-linear-gradient(top, #eee, #aaa);
-    background: -webkit-linear-gradient(top, #eee, #aaa);
-    background: linear-gradient(top, #eee, #aaa);
+  position: absolute;
+  z-index:-1;
+  top:0;
+  width: 50px;
 }
 
 .dock:before {
-    left: -15px;
-    transform: skewX(-25deg);
-    -webkit-transform: skewX(-25deg);
-    -moz-transform: skewX(-25deg);
-    -o-transform: skewX(-25deg);
+  left: -15px;
+  transform: skewX(-25deg);
+  -webkit-transform: skewX(-25deg);
+  -moz-transform: skewX(-25deg);
+  -o-transform: skewX(-25deg);
 }
 
 .dock:after {
-    right: -15px;
-    z-index: -1;
-    transform: skewX(25deg);
-    -webkit-transform: skewX(25deg);
-    -moz-transform: skewX(25deg);
-    -o-transform: skewX(25deg);
+  right: -15px;
+  transform: skewX(25deg);
+  -webkit-transform: skewX(25deg);
+  -moz-transform: skewX(25deg);
+  -o-transform: skewX(25deg);
 }
 
-.dock ul {
-    padding: 0;
-    margin: 0;
+.dock a {
+  position:relative;
+  display:inline-block;
+  text-decoration:none;
+  vertical-align:top;
+  text-align: center;
 }
 
-.dock ul li {
-    float: left;
-    list-style: none;
-    margin: 0;
-    position: relative;
-    font-family: helvetica, sans-serif;
+.dock a span {
+  position: absolute;
+  display:inline-block;
+  top:-90px;
+  text-align: center;
+  font-size: 14px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  color: #fff;
+  background: rgba(107, 107, 107, 0.6);
+  text-shadow: 1px 1px 1px #000;
+  opacity:0;
+  -webkit-transition: opacity .3s linear;
+  -moz-transition: opacity .3s linear;
+  -o-transition: opacity .3s linear;
+  transition: opacity .3s linear;
 }
 
-.dock ul li a {
-    text-decoration: none;
+.dock a img {
+  width: 60px;
+  margin-top:-30px;
+  display: inline;
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
 }
 
-.dock ul li a img {
-    width: 60px;
-    display: inline;
-    margin-top: -30px;
-    -webkit-transition: .5s ease;
-    -moz-transition: .5s ease;
-    -o-transition: .5s ease;
-    transition: .5s ease;
+.dock a:hover img {
+  width:90px;
+  margin-top:-60px;
 }
 
-.dock ul li a span {
-    position: absolute;
-    top:-90px;
-    opacity: 0;
-    display: block;
-    text-align: center;
-    font-size: 14px;
-    width: 80%;
-    margin-right: auto;
-    color: #fff;
-    padding: 4px 12px;
-    overflow: hidden;
-    border-radius: 20px;
-    line-height: 1em;
-
+.dock a:hover + a img {
+  width:75px;
+  margin-top:-45px;
 }
 
-.dock ul li:hover a img {
-    width:90px;
-    margin-top: -60px;
-}
-
-.dock ul li:hover a span {
-    color: white;
-    background: rgba(107, 107, 107, 0.6);
-    text-shadow: 1px 1px 1px #000;
-    opacity: 1;
-    -webkit-transition: opacity .3s linear;
-    -moz-transition: opacity .3s linear;
-    -o-transition: opacity .3s linear;
-    transition: opacity .3s linear;
-    line-height: 1em;
-}
-
-.dock ul li:hover + li a img {
-    width:75px;
-    margin-top: -45px;
+.dock a:hover span {
+  opacity:.98;
 }
