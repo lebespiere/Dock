@@ -37,7 +37,7 @@
       <li>
 
         <a href="">
-          <span>Crome</span>
+          <span>Chrome</span>
           <img src="/public/img/dock/chrome.png">
         </a>
 
